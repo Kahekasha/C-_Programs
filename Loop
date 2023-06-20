@@ -1,0 +1,31 @@
+using System;
+class program
+{
+    static void Main(string[] args)
+    
+    {
+       
+        for(int i = 0; i <3 ; i++)
+        {
+            int user = int.Parse(Console.ReadLine());
+            if (user % 2  == 0) {
+                Console.WriteLine("Even");
+            }
+            else
+            {
+                Console.WriteLine("odd");
+            }
+           
+
+        }
+    
+    }
+}
+
+/*
+int j = user;
+while (j % 2 == 0)
+{
+    Console.WriteLine("Even");
+    j++;
+}*/

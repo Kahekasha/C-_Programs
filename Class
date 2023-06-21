@@ -1,4 +1,4 @@
-//Simple Class with method.
+//Simple Class with method Reference type.
 using System;
 public class test
 {
@@ -14,5 +14,120 @@ public class myprogram
     {
      test obj=new test();
         obj.display();
+    }
+}
+
+//Parameter function or method
+using System;
+public class test
+{
+    int a = 12;
+    public void display(int b)
+    {
+        Console.WriteLine(a+b);
+    }
+}
+public class myprogram
+{
+    public static void Main(string[] args)
+    {
+     test obj=new test();
+        obj.display(10);
+    }
+}
+
+//example with user input
+using System;
+public class test
+{
+    string name;
+    public void display(string name)
+    {
+        Console.WriteLine("Welcome" + " "+ name);
+    }
+}
+public class myprogram
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter your name");
+        string userinpit= Console.ReadLine();
+     test obj=new test();
+        obj.display(userinpit);
+       
+    }
+}
+
+
+
+//Out parameter
+using System;
+public class test
+{
+
+
+    public void display(int a, int b, out int c, out int d)
+    {
+        c = a + b;
+        d = a * b;
+        Console.WriteLine($"{c }+ { d}");
+    }
+}
+public class myprogram
+{
+    public static void Main(string[] args)
+    {
+        int add;
+        int mult;
+     test obj=new test();
+        obj.display(10,20,out add,out mult);
+        Console.WriteLine(obj);
+
+
+    }
+}
+
+
+//Write a C# program to find even or odd number using function.
+
+
+
+using System;
+
+public class myprogram
+{
+
+    public void display(int a)
+    {
+        if (a % 2 == 0) {
+            Console.WriteLine("You entered th even number");
+
+        }
+        else
+        {
+            Console.WriteLine("you entered an odd number");
+
+        }
+
+    }
+    public static void Main(string[] args)
+
+    {
+        for (int i = 0; i < 5; i++) {
+            Console.WriteLine("Enter a number");
+            int userinp = int.Parse(Console.ReadLine());
+
+            myprogram obj = new myprogram();
+
+            obj.display(userinp);
+            if (i == 4)
+            {
+                Console.WriteLine("Itteration ended here");
+            }
+        }
+
+
+
+
     }
 }

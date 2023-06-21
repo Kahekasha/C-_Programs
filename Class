@@ -1,0 +1,18 @@
+//Simple Class with method.
+using System;
+public class test
+{
+    int a = 12;
+    public void display()
+    {
+        Console.WriteLine(a);
+    }
+}
+public class myprogram
+{
+    public static void Main(string[] args)
+    {
+     test obj=new test();
+        obj.display();
+    }
+}

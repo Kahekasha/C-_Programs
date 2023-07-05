@@ -1,0 +1,72 @@
+                          //Class//
+           //Write a program in C# Sharp to create a user define function with parameters.
+	Test Data :
+	Please input a name : Iqra
+	Expected Output :
+	Welcome friend Iqra !
+	Have a nice day!
+
+
+using System;
+
+
+public class test
+{
+    public static void name(string n){
+
+        Console.WriteLine($"Welcome friend {n}!");
+        Console.WriteLine( "Have a nice Day");
+    }
+public static void Main(String[] args)
+    {
+        Console.WriteLine("Please input a name");
+        string userinp = Console.ReadLine();
+        test.name(userinp);
+
+    }
+}
+
+               //Write a C# program to add two numbers using function.
+
+using System;
+
+
+public class test
+{
+    public static void Add(int a, int b){
+
+        Console.WriteLine($"YOu entered {a} and {b}");
+        int sum = a + b;
+        Console.WriteLine( "The sum is  "+sum);
+    }
+public static void Main(String[] args)
+    {
+        Console.WriteLine("Please enter numbers to sum");
+        int userinp1 = int.Parse(Console.ReadLine());
+        int userinp2 = int.Parse(Console.ReadLine());
+
+        test.Add(userinp1, userinp2);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Write a C# program to add two numbers using function.
+
+

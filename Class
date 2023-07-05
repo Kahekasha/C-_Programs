@@ -146,10 +146,7 @@ class program2
         a = 26;
         Console.WriteLine(a);
     }
-    public static void show()
-    {
-        Console.WriteLine("instance method other class");
-    }
+
    public static void Main()
     {
         Console.WriteLine(program2.num
@@ -159,3 +156,29 @@ class program2
 }
 //o/p: 23
 //26
+
+
+
+
+//OUT PARAMETER
+
+
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+ 
+class program2
+{
+
+    public static void display(int a, int b , out int c)
+    {
+        c= a+b;
+        Console.WriteLine(c);
+    }
+    
+   public static void Main()
+    {
+        
+        program2.display(10,20,out int add);
+    }
+}

@@ -1,0 +1,85 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+class test
+{
+   public  int x = 34;
+   public  int d1()
+    {
+        return 2;    }
+}
+ 
+class program2:test
+{
+    
+   
+    public  void display(int a, int b , out int c)
+    {
+        c= a+b;
+        Console.WriteLine(c);
+    }
+    
+   public static void Main(string[] args)
+    {
+
+        program2 p = new program2();
+        Console.WriteLine(p.d1());
+        
+        p.display(1,2,out int d);
+        third t = new third();
+        Console.WriteLine(t.s);
+
+
+
+    }
+}
+class third:program2
+{
+  public  int m = 45;
+   public string s = "Hello";
+}
+//HEIRARCHICAL INHERITANCE
+using System;
+using System.Security.Cryptography.X509Certificates;
+class test
+{
+   public  int x = 34;
+   public  void d1()
+    {
+        Console.WriteLine("Parent class");
+    }
+}
+ 
+class program2:test
+{
+    
+   
+    public  void display()
+    {
+       
+        Console.WriteLine("First Child");
+    }
+    
+   public static void Main(string[] args)
+    {
+        Console.WriteLine("THis is hierarchical inheritance");
+
+        program2 p = new program2();
+        p.display();
+        p.d1();
+        
+        
+        third t = new third();
+        t.d1();
+        
+        Console.WriteLine(t.s);
+
+
+
+
+    }
+}
+class third:test
+{
+
+   public string s = "Hello I am third child";
+}

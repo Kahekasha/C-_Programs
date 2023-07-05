@@ -1,4 +1,8 @@
 //Simple Class with method Reference type.
+//Static methods are ceated by the name of class 
+//Instance methods are ccreated with the obj of that class 
+//To use the fields of class in methods avoid static keyword in methods.
+//Fields are accessed only through the obj of class
 using System;
 public class test
 {

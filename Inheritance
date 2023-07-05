@@ -137,4 +137,40 @@ class Program
   }
 }
 
+//Interface i.e multiple inheritance
+
+
+interface Employee2
+{
+     void m1();
+   
+}
+ 
+public class Employee: Programmer, Employee2
+{
+    public void m1()
+    {
+        Console.WriteLine("This is interfaced method");
+    }
+
+    public float salary = 40000;
+}
+public class Programmer 
+{
+    public float bonus = 10000;
+}
+class TestInheritance
+{
+    public static void Main(string[] args)
+    {
+        Employee p1 = new Employee();
+        p1.m1();
+
+
+        Console.WriteLine(p1.salary);
+        Console.WriteLine(p1.bonus);
+
+
+    }
+}
 

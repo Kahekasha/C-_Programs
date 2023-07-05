@@ -131,3 +131,31 @@ public class myprogram
 
     }
 }
+//REF PARAMETER
+
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+ 
+    //var must have static keyword to which ref is allocated
+class program2
+{
+    static int num = 23;
+    public static void display(ref int a)
+    {
+        a = 26;
+        Console.WriteLine(a);
+    }
+    public static void show()
+    {
+        Console.WriteLine("instance method other class");
+    }
+   public static void Main()
+    {
+        Console.WriteLine(program2.num
+            );
+        program2.display(ref num);
+    }
+}
+//o/p: 23
+//26

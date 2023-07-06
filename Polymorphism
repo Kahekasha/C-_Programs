@@ -1,0 +1,50 @@
+class program
+{
+
+   static  void Test()
+    {
+        Console.WriteLine("hello");
+    }
+    static void Test(int a)
+    {
+        Console.WriteLine("int :"+ a);
+    }
+    static void Test(double a)
+    {
+        Console.WriteLine("double :" + a);
+    }
+    static void Test(int a, int b)
+    {
+        Console.WriteLine("a+b"+a+b);
+    }
+  
+
+    static void Main(string[] args)
+    {
+        //Overload methods within same class
+        program.Test(1);
+        Test(2.3);
+        Test(3,6);
+        Test();
+        //Overriding cant implement static
+        program1 p1 = new program2();
+        p1.test();
+    }
+
+}
+public class program1
+{
+public  virtual void test()
+    {
+        Console.WriteLine("this is parent class method");
+    }
+}
+public class program2:program1
+{
+    //Overriding
+    public   override void test()
+    {
+        base.test();
+        Console.WriteLine("this is child class method");
+    }
+}

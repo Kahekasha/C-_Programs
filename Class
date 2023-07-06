@@ -16,7 +16,7 @@ public class myprogram
 {
     public static void Main(string[] args)
     {
-     test obj=new test();
+     test obj=new test();//test()also called constructor
         obj.display();
     }
 }

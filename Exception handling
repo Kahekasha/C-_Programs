@@ -1,0 +1,89 @@
+Syntax:
+try 
+{
+  //  Block of code to try
+}
+catch (Exception e)
+{
+  //  Block of code to handle errors
+}
+
+                 //DEVIDED BY ZERO ERROR
+using System;  
+public class ExExample  
+{  
+    public static void Main(string[] args)  
+    {  
+        try  
+        {  
+            int a = 10;  
+            int b = 0;  
+            int x = a / b;  
+        }  
+        catch (Exception e) { Console.WriteLine(e); }  
+  
+        Console.WriteLine("Rest of the code");  
+    }  
+}  
+      finally { Console.WriteLine("Finally block is executed"); }  
+        Console.WriteLine("Rest of the code");  
+    }  
+
+        //ARRAY INDEX OUT OF BOUNDS
+try
+{
+  int[] myNumbers = {1, 2, 3};
+  Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+  Console.WriteLine(e.Message);
+}
+
+
+
+Example
+try
+{
+  int[] myNumbers = {1, 2, 3};
+  Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+  Console.WriteLine("Something went wrong.");
+}
+
+
+        //USER DEFINED EXCEPTION
+
+C# allows us to create user-defined or custom exception. It is used to make the meaningful exception. To do this, we need to inherit Exception class.
+
+C# user-defined exception example
+using System;  
+public class InvalidAgeException : Exception  
+{  
+    public InvalidAgeException(String message)  
+        : base(message)  
+    {  
+  
+    }  
+}  
+public class TestUserDefinedException  
+{  
+    static void validate(int age)  
+    {  
+        if (age < 18)  
+        {  
+            throw new InvalidAgeException("Sorry, Age must be greater than 18");  
+        }  
+    }  
+    public static void Main(string[] args)  
+    {  
+        try  
+        {  
+            validate(12);  
+        }  
+        catch (InvalidAgeException e) { Console.WriteLine(e); }  
+        Console.WriteLine("Rest of the code");  
+    }  
+}  

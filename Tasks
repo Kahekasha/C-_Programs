@@ -48,25 +48,69 @@ public static void Main(String[] args)
         test.Add(userinp1, userinp2);
 
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Write a C# program to add two numbers using function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          //Write C# program to create calculator using switch Statement
+
+using System;
+using System.Numerics;
+using System.Threading.Channels;
+using static System.Net.Mime.MediaTypeNames;
+
+class program
+{
+    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("enter the airthmatic operators");
+        string input1 = Console.ReadLine();
+        Console.WriteLine(input1);
+        Console.WriteLine("enter the Number ");
+        int Num1 = int.Parse(Console.ReadLine());
+        Console.WriteLine(Num1);
+        Console.WriteLine("enter the second Number ");
+        int Num2 = int.Parse(Console.ReadLine());
+        Console.WriteLine(Num2);
+        switch (input1)
+        {
+            case "+":
+                Console.WriteLine(Num1 + Num2);
+                break;
+            case "-":
+                Console.WriteLine(Num1 - Num2);
+                break;
+            case "*":
+                Console.WriteLine(Num1 / Num2);
+                break;
+
+        }
+
+
+    }
+
+}
 
 

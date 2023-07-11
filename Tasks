@@ -113,4 +113,43 @@ class program
 
 }
 
+    //Write C# program to check even or odd number using switch case
+
+using System;
+using System.Numerics;
+using System.Threading.Channels;
+using static System.Net.Mime.MediaTypeNames;
+
+class program
+{
+    
+    public static void Main(string[] args)
+    {
+       
+       
+        Console.WriteLine("enter the Number ");
+       
+        int Num2 = int.Parse(Console.ReadLine());
+        Console.WriteLine(Num2);
+        switch (Num2 % 2 )
+        {
+            case 0:
+                Console.WriteLine("Even");
+                break;
+            case 1:
+                Console.WriteLine("Odd");
+                break;
+            default:
+                Console.WriteLine("odd");
+                break;
+
+
+        }
+
+
+    }
+
+}
+
+
 

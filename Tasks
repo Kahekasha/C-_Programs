@@ -153,3 +153,32 @@ class program
 
 
 
+using System;
+using System.Numerics;
+using System.Threading.Channels;
+using static System.Net.Mime.MediaTypeNames;
+
+class program
+{
+    
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the Number to show the table");
+        int u = int.Parse(Console.ReadLine());
+       for(int i=1; i <=10; i++)
+        {
+            
+                Console.WriteLine(u*i);
+            
+        }
+
+
+        }
+
+
+    }
+
+
+
+
+

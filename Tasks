@@ -179,6 +179,54 @@ class program
     }
 
 
+   / /Calculate the percentage method
+using System;
+using System.Globalization;
 
+class program
+{
+    public static void Percentage(int m1, int m2, int m3)
+    {
+        int total = m1 + m2 + m3;
+        Console.WriteLine("total is:"+total);
+        long percent = (total  * 100/300);
+        Console.WriteLine("Percentage is"+ percent);
+        if(percent >= 80)
+        {
+            Console.WriteLine("Grad A");
+        }
+        else if(percent >= 60 && percent < 80)
+        {
+            Console.WriteLine("Grad B");
+        }
+        else
+        {
+            Console.WriteLine("Grad c");
+        }
+    }
+    public static void Main(string[] args)
+    {
+        //Console.WriteLine("Enter name");
+        //string name = Console.ReadLine();
+        //Console.WriteLine(name);
+        //Console.WriteLine("Enter ID");
+        //int ID = int.Parse(Console.ReadLine());
+        //Console.WriteLine(ID);
+        Console.WriteLine("Enter Sub1 mark");
+        int sub1 = int.Parse(Console.ReadLine());
+        Console.WriteLine(sub1);
+        Console.WriteLine("Enter Sub2 mark");
+        int sub2 = int.Parse(Console.ReadLine());
+        Console.WriteLine(sub2);
+        Console.WriteLine("Enter Sub3 mark");
+        int sub3 = int.Parse(Console.ReadLine());
+        Console.WriteLine(sub3);
+
+
+        Percentage(sub1, sub2, sub3);
+
+
+    }
+}
 
 
